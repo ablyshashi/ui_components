@@ -1,4 +1,4 @@
-import FSelect from '../form/FSelect';
+// import FSelect from '../form/FSelect';
 import DatePickerField from '../form/DatePickerField';
 import TextField from '../form/TextField';
 import ButtonRadio from '../form/ButtonRadio';
@@ -18,7 +18,7 @@ export default function ConcessionForm({ formFld, handleOnChange, validMsg }) {
     ];
     return (
         <>
-            <FSelect
+            {/* <FSelect
                 placeholder="Concession card"
                 type="status"
                 options={concessions}
@@ -28,7 +28,7 @@ export default function ConcessionForm({ formFld, handleOnChange, validMsg }) {
                 }}
                 value={formFld.concession_card_name}
                 valid={validMsg['concession_card_name']}
-            ></FSelect>
+            ></FSelect> */}
             <TextField name={'concession_card_number'} value={formFld.concession_card_number} onChange={handleOnChange} valid={validMsg['concession_card_number']} title={'Card number'} />
             <TextField name={'concession_card_holder'} value={formFld.concession_card_holder} onChange={handleOnChange} valid={validMsg['concession_card_holder']} title={'Card Holder Name'} />
             {<DatePickerField name={'concession_issued'} value={formFld.concession_issued} onChange={handleOnChange} valid={validMsg['concession_issued']} title={'Issued'} maxDate={new Date()} />}
