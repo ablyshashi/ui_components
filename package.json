@@ -31,6 +31,8 @@
   "vite": "^5.0.0"
  },
  "dependencies": {
-  "react-datepicker": "^9.1.0"
+  "moment-timezone": "^0.6.2",
+  "react-datepicker": "^9.1.0",
+  "react-text-mask": "^5.5.0"
  }
 }
