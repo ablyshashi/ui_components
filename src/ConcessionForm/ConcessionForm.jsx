@@ -31,8 +31,8 @@ export default function ConcessionForm({ formFld, handleOnChange, validMsg }) {
             ></FSelect> */}
             <TextField name={'concession_card_number'} value={formFld.concession_card_number} onChange={handleOnChange} valid={validMsg['concession_card_number']} title={'Card number'} />
             <TextField name={'concession_card_holder'} value={formFld.concession_card_holder} onChange={handleOnChange} valid={validMsg['concession_card_holder']} title={'Card Holder Name'} />
-            {<DatePickerField name={'concession_issued'} value={formFld.concession_issued} onChange={handleOnChange} valid={validMsg['concession_issued']} title={'Issued'} maxDate={new Date()} />}
-            {<DatePickerField minDate={new Date()} name={'concession_expiry'} value={formFld.concession_expiry} onChange={handleOnChange} valid={validMsg['concession_expiry']} title={'Expiry'} />}
+            {/* {<DatePickerField name={'concession_issued'} value={formFld.concession_issued} onChange={handleOnChange} valid={validMsg['concession_issued']} title={'Issued'} maxDate={new Date()} />}
+            {<DatePickerField minDate={new Date()} name={'concession_expiry'} value={formFld.concession_expiry} onChange={handleOnChange} valid={validMsg['concession_expiry']} title={'Expiry'} />} */}
 
 
             {<TextField name={'concession_address'} value={formFld.service_address} readOnly valid={validMsg['concession_address']} title={'Concession Card Address'} />}
