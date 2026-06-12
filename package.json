@@ -1,0 +1,36 @@
+{
+ "name": "nectr-components",
+ "version": "1.0.0",
+ "type": "module",
+ "main": "./dist/nectr-library.cjs.js",
+ "module": "./dist/nectr-library.es.js",
+ "types": "./src/index.js",
+ "exports": {
+  ".": {
+   "import": "./dist/nectr-library.es.js",
+   "require": "./dist/nectr-library.cjs.js",
+   "types": "./src/index.js"
+  }
+ },
+ "files": [
+  "dist",
+  "src"
+ ],
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build"
+ },
+ "peerDependencies": {
+  "react": "^17.0.0 || ^18.0.0",
+  "react-dom": "^17.0.0 || ^18.0.0"
+ },
+ "devDependencies": {
+  "@vitejs/plugin-react": "^4.3.0",
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "vite": "^5.0.0"
+ },
+ "dependencies": {
+  "react-datepicker": "^9.1.0"
+ }
+}
